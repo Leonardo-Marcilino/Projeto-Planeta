@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    color: #101010;
+}
+
+body{
+    height: 100vh;
+    margin: 45px 80px; 
+    display: flex;
+    flex-direction: column;
+    gap: 117px;
+    background: RGBA(135, 239, 246, 1);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%,  rgba(135, 239, 246, 1) 50%);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .logo{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    & nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    & .info {
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+
+        & .content-text{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            & .info-card{
+                font-size: 24px;
+                color: rgba(255, 35, 35, 1);
+                font-weight: 600;
+            }
+    
+            & .title{
+                font-size: 40px;
+                font-weight: bold;
+            }
+    
+            & .description {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+
+        & .box-btn{
+            display: flex;
+            gap: 16px;
+
+            & .full-btn{
+                padding: 14px 20px;
+                background-color: rgba(74, 187, 194, 1);
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+                border-radius: 16px;
+            }
+            & .border-btn{
+                padding: 20px 14px;
+                background-color: transparent;
+                border:2px solid rgba(74, 187, 194, 1);
+                color: rgba(74, 187, 194, 1);
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+                border-radius: 16px;
+            }
+        }
+    }
+
+
+}
